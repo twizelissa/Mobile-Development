@@ -9,18 +9,19 @@ class MyFirstApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return MyFirstAppState();
+    return _MyFirstAppState();
   }
 }
 
 //state is generic class
-class MyFirstAppState extends State<MyFirstApp> {
-  var quetionIndex = 0;
-  void answerQuestion() {
+//_MyFirstAppState the reason for underscore is to  make it private
+class _MyFirstAppState extends State<MyFirstApp> {
+  var _quetionIndex = 0;
+  void _answerQuestion() {
     setState(() {
-      quetionIndex = quetionIndex + 1;
+      _quetionIndex = _quetionIndex + 1;
     });
-    print(quetionIndex);
+    print(_quetionIndex);
   }
 
   @override
@@ -43,8 +44,8 @@ class MyFirstAppState extends State<MyFirstApp> {
         ),
         body: Column(
           children: [
-            Text(questions[quetionIndex]),
-            RaisedButton(child: Text('Question 1'), onPressed: answerQuestion),
+            Text(questions[_quetionIndex]),
+            RaisedButton(child: Text('Question 1'), onPressed: _answerQuestion),
             RaisedButton(
                 child: Text('Question 2'),
                 onPressed: () => print('Question 2 answered')),
