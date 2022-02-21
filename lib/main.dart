@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 //alternative to
@@ -15,12 +17,16 @@ class MyFirstApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('IQ TEST APP'),
+          title: Text(
+            'NO BRAIN APP',
+          ),
         ),
         body: Column(
-          children:[
+          children: [
             Text('Questions!'),
-            RaisedButton(child: Text,)
+            RaisedButton(child: Text('Question 1'), onPressed: null),
+            RaisedButton(child: Text('Question 2'), onPressed: null),
+            RaisedButton(child: Text('Question 3'), onPressed: null),
           ],
         ),
       ),
