@@ -1,6 +1,5 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
+import './main.dart';
 
 void main() => runApp(MyFirstApp());
 
@@ -17,6 +16,7 @@ class MyFirstApp extends StatefulWidget {
 //_MyFirstAppState the reason for underscore is to  make it private
 class _MyFirstAppState extends State<MyFirstApp> {
   var _quetionIndex = 0;
+
   void _answerQuestion() {
     setState(() {
       _quetionIndex = _quetionIndex + 1;
@@ -35,6 +35,7 @@ class _MyFirstAppState extends State<MyFirstApp> {
       'Did you sometime think that you fucked off',
       'If yes in previous question when'
     ];
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -44,7 +45,9 @@ class _MyFirstAppState extends State<MyFirstApp> {
         ),
         body: Column(
           children: [
-            Text(questions[_quetionIndex]),
+            Text(
+              questions[_quetionIndex],
+            ),
             RaisedButton(child: Text('Question 1'), onPressed: _answerQuestion),
             RaisedButton(
                 child: Text('Question 2'),
