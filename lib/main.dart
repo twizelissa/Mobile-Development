@@ -8,7 +8,6 @@ class MyFirstApp extends StatefulWidget {
   //connecting generic class with statful class
   @override
   State<StatefulWidget> createState() {
-   
     return _MyFirstAppState();
   }
 }
@@ -28,30 +27,48 @@ class _MyFirstAppState extends State<MyFirstApp> {
   @override
   Widget build(BuildContext context) {
     var questions = [
-      'Do you love Reading',
-      'Do you Believe Hard work paysoff',
-      'What is your favorite food',
-      'What do you do in your free time',
-      'Do you care Improvement of other',
-      'Did you sometime think that you fucked off',
-      'If yes in previous question when'
+      {
+        'questionText': 'What is your favorite color ?',
+        'answers': ['blue', 'green', 'orange', 'red'],
+      },
+      {
+        'questionText': 'What is your favorite food ?',
+        'answers': ['fish', 'chips', 'meat', 'rice'],
+      },
+      {
+        'questionText': 'What is your favorite football start ?',
+        'answers': [
+          'Ronaldo',
+          'Messi',
+          'Lewandowski',
+          'Mbape',
+          'Neymar',
+          'Haland'
+        ],
+      },
+      {
+        'questionText': 'What is your favorite pet ?',
+        'answers': ['Cat', 'Dog', 'Corocodile', 'Snake'],
+      },
     ];
 
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'IQ TEST APP',
+            'SKILLGAIN',
           ),
         ),
         body: Column(
           children: [
             Question(
-              questions[_quetionIndex],
+              questions[_quetionIndex]['questionText'] as String,
             ),
-            Answer(_answerQuestion),
-            Answer(_answerQuestion),
-            Answer(_answerQuestion),
+            ...(questions[_quetionIndex]['answers'] as List<String>).map(
+              (answer) {
+                return Answer(_answerQuestion, answer);
+              },
+            ).toList()
           ],
         ),
       ),
