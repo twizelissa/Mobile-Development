@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'question.dart';
+import './answer.dart';
 
 void main() => runApp(MyFirstApp());
 
@@ -7,7 +8,7 @@ class MyFirstApp extends StatefulWidget {
   //connecting generic class with statful class
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+   
     return _MyFirstAppState();
   }
 }
@@ -48,16 +49,9 @@ class _MyFirstAppState extends State<MyFirstApp> {
             Question(
               questions[_quetionIndex],
             ),
-            RaisedButton(child: Text('Question 1'), onPressed: _answerQuestion),
-            RaisedButton(
-                child: Text('Question 2'),
-                onPressed: () => print('Question 2 answered')),
-            RaisedButton(
-              child: Text('Question 3'),
-              onPressed: () {
-                print("Question 3 answered");
-              },
-            ),
+            Answer(),
+            Answer(),
+            Answer(),
           ],
         ),
       ),
