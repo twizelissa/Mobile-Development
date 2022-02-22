@@ -36,7 +36,7 @@ class _MyFirstAppState extends State<MyFirstApp> {
         'answers': ['fish', 'chips', 'meat', 'rice'],
       },
       {
-        'questionText': 'What is your favorite football start ?',
+        'questionText': 'What is your favorite football star ?',
         'answers': [
           'Ronaldo',
           'Messi',
