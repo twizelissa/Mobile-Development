@@ -49,9 +49,9 @@ class _MyFirstAppState extends State<MyFirstApp> {
             Question(
               questions[_quetionIndex],
             ),
-            Answer(),
-            Answer(),
-            Answer(),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
           ],
         ),
       ),
