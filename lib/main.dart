@@ -55,8 +55,9 @@ class _MyFirstAppState extends State<MyFirstApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 54, 32, 65),
           title: Text(
-            'SKILLGAIN',
+            'SKILLGAIN',style: ,
           ),
         ),
         body: Column(
