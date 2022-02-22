@@ -57,8 +57,9 @@ class _MyFirstAppState extends State<MyFirstApp> {
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 54, 32, 65),
           title: Text(
-            'SKILLGAIN',style: ,
+            'SKILLGAIN',
           ),
+          centerTitle: true,
         ),
         body: Column(
           children: [
