@@ -7,8 +7,6 @@ import './result.dart';
 void main() => runApp(MyFirstApp());
 
 class MyFirstApp extends StatefulWidget {
-  const MyFirstApp({Key? key}) : super(key: key);
-
   //connecting generic class with statful class
   @override
   State<StatefulWidget> createState() {
@@ -74,8 +72,10 @@ class _MyFirstAppState extends State<MyFirstApp> {
   ];
 
   var _questionIndex = 0;
+  int _totalScore = 0;
 
-  void _answerQuestion() {
+  void _answerQuestion(int score) {
+    _totalScore += score;
     setState(() {
       _questionIndex = _questionIndex + 1;
     });
