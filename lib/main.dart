@@ -60,7 +60,7 @@ class _MyFirstAppState extends State<MyFirstApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 54, 32, 65),
+          backgroundColor: Color.fromARGB(255, 77, 157, 248),
           title: const Text(
             'SKILLGAIN',
           ),
@@ -79,7 +79,7 @@ class _MyFirstAppState extends State<MyFirstApp> {
                   ).toList()
                 ],
               )
-            : Text('Done! You Ginious'),
+            : Center(child: Text('You did it!')),
       ),
     );
   }

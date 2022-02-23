@@ -12,7 +12,7 @@ class Answer extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: RaisedButton(
-        color: const Color.fromARGB(255, 54, 32, 65),
+        color: Color.fromARGB(255, 77, 157, 248),
         textColor: Colors.white,
         child: Text(answerText),
         onPressed: selectHandler,
