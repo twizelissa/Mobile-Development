@@ -21,27 +21,33 @@ class MyFirstApp extends StatefulWidget {
 class _MyFirstAppState extends State<MyFirstApp> {
   final _questions = const [
     {
-      'questionText': 'What is your favorite color ?',
-      'answers': ['blue', 'green', 'orange', 'red'],
+      'questionText':
+          'Which number should come next in the pattern? 37, 34, 31, 28',
+      'answers': ['23', '40', '25', '20'],
     },
     {
-      'questionText': 'What is your favorite food ?',
-      'answers': ['fish', 'chips', 'meat', 'rice'],
+      'questionText':
+          'Find the answer that best completes the analogy?, Book is to Reading as Fork is to:',
+      'answers': ['drawing', 'writing', 'stirring', 'eating'],
     },
     {
-      'questionText': 'What is your favorite football star ?',
+      'questionText': 'What number best completes the analogy? :8:4 as 10:',
+      'answers': ['3', '7', '24', '5', '10', '4'],
+    },
+    {
+      'questionText':
+          'Which of the following can be arranged into a 5-letter English word?',
+      'answers': ['H R G S T', 'R I L S A', 'T O O M T', ' W Q R G S'],
+    },
+    {
+      'questionText':
+          'Find two words, one from each group, that are the closest in meaning: Group A[talkative, job, ecstatic] Group B[angry, wind, loquacious]',
       'answers': [
-        'Ronaldo',
-        'Messi',
-        'Lewandowski',
-        'Mbape',
-        'Neymar',
-        'Haland'
+        'talkative and wind',
+        'job and angry',
+        'talkative and loquacious',
+        ' ecstatic and angry'
       ],
-    },
-    {
-      'questionText': 'What is your favorite pet ?',
-      'answers': ['Cat', 'Dog', 'Corocodile', 'Snake'],
     },
   ];
 
@@ -64,7 +70,7 @@ class _MyFirstAppState extends State<MyFirstApp> {
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 77, 157, 248),
           title: const Text(
-            'SKILLGAIN',
+            'IQ TESTER',
           ),
           centerTitle: true,
         ),
