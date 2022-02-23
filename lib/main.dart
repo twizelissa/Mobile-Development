@@ -23,30 +23,52 @@ class _MyFirstAppState extends State<MyFirstApp> {
     {
       'questionText':
           'Which number should come next in the pattern? 37, 34, 31, 28',
-      'answers': ['23', '40', '25', '20'],
+      'answers': [
+        {'text': '23', 'score': 0},
+        {'text': '40', 'score': 0},
+        {'text': '25', 'score': 20},
+        {'text': '20', 'score': 0}
+      ],
     },
     {
       'questionText':
           'Find the answer that best completes the analogy?, Book is to Reading as Fork is to:',
-      'answers': ['drawing', 'writing', 'stirring', 'eating'],
+      'answers': [
+        {'text': 'drawing', 'score': 0},
+        {'text': 'writing', 'score': 0},
+        {'text': 'stirring', 'score': 0},
+        {'text': 'eating', 'score': 20}
+      ],
     },
     {
       'questionText': 'What number best completes the analogy? :8:4 as 10:',
-      'answers': ['3', '7', '24', '5', '10', '4'],
+      'answers': [
+        {'text': '3', 'score': 0},
+        {'text': '7', 'score': 0},
+        {'text': '24', 'score': 0},
+        {'text': '5', 'score': 20},
+        {'text': '10', 'score': 0},
+        {'text': '4', 'score': 0}
+      ],
     },
     {
       'questionText':
           'Which of the following can be arranged into a 5-letter English word?',
-      'answers': ['H R G S T', 'R I L S A', 'T O O M T', ' W Q R G S'],
+      'answers': [
+        {'text': 'H R G S T', 'score': 0},
+        {'text': 'R I L S A', 'score': 20},
+        {'text': 'T O O M T', 'score': 20},
+        {'text': ' W Q R G S', 'score': 0}
+      ],
     },
     {
       'questionText':
           'Find two words, one from each group, that are the closest in meaning: Group A[talkative, job, ecstatic] Group B[angry, wind, loquacious]',
       'answers': [
-        'talkative and wind',
-        'job and angry',
-        'talkative and loquacious',
-        ' ecstatic and angry'
+        {'text': 'talkative and wind', 'score': 0},
+        {'text': 'job and angry', 'score': 0},
+        {'text': 'talkative and loquacious', 'score': 20},
+        {'text': 'ecstatic and angry', 'score': 0}
       ],
     },
   ];
