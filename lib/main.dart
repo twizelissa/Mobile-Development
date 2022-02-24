@@ -101,7 +101,7 @@ class _MyFirstAppState extends State<MyFirstApp> {
                 answerQuestion: _answerQuestion,
                 questionIndex: _questionIndex,
                 questions: _questions)
-            : Result(),
+            : Result(_totalScore),
       ),
     );
   }
