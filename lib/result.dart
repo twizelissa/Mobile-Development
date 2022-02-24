@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
   final int resultScore;
+  final Function resetHandler;
 
-  Result(this.resultScore);
+  Result(this.resultScore, this.resetHandler);
 
   String get resultPhase {
     var resultText;
@@ -34,7 +35,7 @@ class Result extends StatelessWidget {
           ),
           color: Colors.blueAccent,
           textColor: Colors.white,
-          onPressed: restart(),
+          onPressed: resetHandler,
         )
       ],
     ));
