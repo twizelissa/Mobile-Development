@@ -27,6 +27,15 @@ class Result extends StatelessWidget {
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
         ),
+        FlatButton(
+          child: Text(
+            'Restart Test',
+            style: TextStyle(fontSize: 20),
+          ),
+          color: Colors.blueAccent,
+          textColor: Colors.white,
+          onPressed: restart(),
+        )
       ],
     ));
   }
