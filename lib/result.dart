@@ -22,7 +22,8 @@ class Result extends StatelessWidget {
     return Center(
         child: Text(
       resultPhase,
-      style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      textAlign: TextAlign.center,
     ));
   }
 }
